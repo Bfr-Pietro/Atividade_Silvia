@@ -1,0 +1,395 @@
+/* Estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #001021;
+    color: white;
+    padding: 10px 20px 10px 10px;
+    height: 10vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo>img{
+    width: 80px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+#menu>li>a:hover{
+    color: aqua;
+}
+
+#oquesao{
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#boaspraticas{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#transformacao{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.direita{
+    width: 45vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquerda{
+    width: 45vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.esquerda{
+    width: 45vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.direita{
+    width: 45vw;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.esquerda>h1{
+    font-size: 40px;
+}
+
+.esquerda>p{
+    font-size: 20px;
+}
+
+.direita>img{
+    width: 40vw;
+}
+
+.direita>h1{
+    font-size: 40px;
+}
+
+.direita>p{
+    font-size: 20px;
+}
+
+.esquerda>img{
+    width: 40vw;
+}
+
+.sla{
+    width: 100vw;
+    height: 100vh;
+    background-color: #001021;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+    gap: 30px;
+}
+
+.sla>h1{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+#ondeficaosbeneficios{
+    display: flex;
+    gap: 20px;
+}
+
+.beneficios{
+    width: 23vw;
+    height: 70vh;
+    background-color: #00264F;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.305));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    gap: 20px;
+    color: #fff;
+}
+
+.beneficios:hover{
+    transform: scale(1.025);
+}
+
+.beneficios>img{
+    width: 20vw;
+    border-radius: 20px;
+}
+
+#imgtransformacao{
+    width: 30vw;
+}
+
+#imgboaspraticas{
+    padding-left: 5vw;
+}
+
+#contato{
+    background-color: #001021;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+#cont{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 25px;
+}
+
+.input-group {
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    padding: 0 5px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-group input {
+    width: 800px;
+    height: 60px;
+    font-size: 16px;
+    color: #fff;
+    padding: 0 15px;
+    background: transparent;
+    border: 1.2px solid #fff;
+    outline: none;
+    border-radius: 5px;
+}
+
+#input-group2 input {
+    width: 800px;
+    height: 300px;
+}
+
+.input-group input:focus~label,
+.input-group input:valid~label {
+    top: 0;
+    font-size: 14px;
+    background: #001021;
+}
+
+#enviar input {
+    width: 800px;
+    height: 40px;
+    font-size: 16px;
+}
+
+#enviar input:hover{
+    cursor: pointer;
+}
+
+#footerlinks, footer>h2, .sla>h1, .direita, .esquerda, #ondeficaosbeneficios, #formulario, #cont{
+    visibility: hidden;
+}
+
+footer>div>a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#footerlinks{
+    display: flex;
+    gap: 20px;
+}
+footer{
+    background-color: black;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20vh;
+    gap: 20px;
+}
+#footerlinks>a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+#footerlinks a:hover::after{
+    width: 53px;
+}
+#footerlinks>a{
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #001021;
+    }
+
+    .logo{
+        width: 70vw;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+    
+    #oquesao{
+        flex-direction: column;
+        padding-bottom: 10vh;
+    }
+
+    #esquerda{
+        width: 90vw;
+    }
+
+    #direita{
+        width: 90vw;
+    }
+
+    #direita>img{
+        width: 80vw;
+    }
+
+    #ondeficaosbeneficios{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .beneficios{
+        width: 80vw;
+    }
+
+    .beneficios>img{
+        width: 70vw;
+    }
+
+    #beneficios{
+        min-height: 305vh;
+    }
+    #imgboaspraticas{
+        padding-left: 0vw;
+    }
+}
